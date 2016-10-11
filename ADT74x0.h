@@ -18,7 +18,7 @@ class ADT74x0 {
 
   public:
     void begin(byte addr=ADT74x0_DEFAULT_ADDRESS);
-    float readTemperature(unsigned int timeout_ms=ADT74x0_DEFAULT_TIMEOUT_MS);
-};  
+    float readTemperature(uint16_t timeout_ms=ADT74x0_DEFAULT_TIMEOUT_MS);
+};
 
 #endif   /* LIB/ADT74X0/ADT74X0_H_INCLUDED */
