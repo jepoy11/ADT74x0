@@ -21,10 +21,10 @@ void ADT74x0::begin(byte addr){
 }
 
 float ADT74x0::readTemperature(unsigned int timeout_ms){
-  unsigned int start_ms = millis();
+  uint16_t start_ms = millis();
   uint16_t d;
-  
-  Wire.requestFrom(addr, 2);
+
+  Wire.requestFrom(this->addr, 2U);
 
   while(Wire.available() < 2){
     if(millis() - start_ms > timeout_ms){
