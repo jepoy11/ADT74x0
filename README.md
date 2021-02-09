@@ -8,3 +8,7 @@ SCL(pin 1)----SCL(A5)
 SDA(pin 2)----SCL(A4)
 GND(pin 3)----GND
 VCC(pin 4)----5V
+
+
+Understanding I2C wire library
+https://www.renesas.com/us/en/products/gadget-renesas/reference/gr-cotton/library-wire
